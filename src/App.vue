@@ -1,10 +1,21 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/post">Post</router-link> |
+    <router-link to="/read">Read</router-link>
   </nav>
   <router-view/>
 </template>
+
+<script>
+import { onBeforeMount } from '@vue/runtime-core'
+export default {
+  name: "App",
+  setup() {
+    onBeforeMount(()=> {
+    })
+  },
+}
+</script>
 
 <style>
 #app {
